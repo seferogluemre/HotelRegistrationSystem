@@ -16,5 +16,24 @@ namespace HotelRegistrationSystem
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+        /* Şifre gizleme gösterme */
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            txtPassword.PasswordChar = '\0';
+            pictureBox2.Visible = true;
+            pictureBox1.Visible = false;
+        }
+        /* Şifre gizleme gösterme */
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+            txtPassword.PasswordChar = '*';
+            pictureBox1.Visible = true;
+            pictureBox2.Visible = false;
+        }
     }
 }
