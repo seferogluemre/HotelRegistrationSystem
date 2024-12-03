@@ -1,1 +1,1 @@
-Yeni başladıgım projedir adım adım geliştirmeler yapacagım
+Yeni başladıgım projedir adım adım geliştirmeler yapılcaktır
