@@ -1,1 +1,1 @@
-Yeni başladıgım projedir adım adım geliştirmeler yapılcaktır
+Yeni başladıgım Pansiyon Kayıt sistemidir  adım adım geliştirmeler yapılcaktır

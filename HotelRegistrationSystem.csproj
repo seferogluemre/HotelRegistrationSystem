@@ -46,24 +46,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="form\FrmAdminGiris.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="form\FrmAdminGiris.Designer.cs">
+      <DependentUpon>FrmAdminGiris.cs</DependentUpon>
     </Compile>
-    <Compile Include="icons\FrmYeniMüşteriEkle.cs">
+    <Compile Include="form\FrmAnaForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="icons\FrmYeniMüşteriEkle.Designer.cs">
+    <Compile Include="form\FrmAnaForm.Designer.cs">
+      <DependentUpon>FrmAnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\FrmYeniMüşteriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\FrmYeniMüşteriEkle.Designer.cs">
       <DependentUpon>FrmYeniMüşteriEkle.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="form\FrmAdminGiris.resx">
+      <DependentUpon>FrmAdminGiris.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="icons\FrmYeniMüşteriEkle.resx">
+    <EmbeddedResource Include="form\FrmAnaForm.resx">
+      <DependentUpon>FrmAnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\FrmYeniMüşteriEkle.resx">
       <DependentUpon>FrmYeniMüşteriEkle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -91,6 +100,8 @@
   <ItemGroup>
     <Content Include="icons\icons8_eye_96px_1.png" />
     <Content Include="icons\icons8_hide_96px.png" />
+    <Content Include="icons\icons8_manager_96px_1.png" />
+    <Content Include="icons\indir.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

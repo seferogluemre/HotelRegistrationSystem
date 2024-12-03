@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HotelRegistrationSystem
 {
-    public partial class Form1 : Form
+    public partial class FrmAdminGiris : Form
     {
-        public Form1()
+        public FrmAdminGiris()
         {
             InitializeComponent();
         }
