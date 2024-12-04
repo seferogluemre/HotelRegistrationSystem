@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Sql;
 using System.Data.SqlClient;
+using HotelRegistrationSystem.form;
 
 
 namespace HotelRegistrationSystem.icons
@@ -16,7 +17,7 @@ namespace HotelRegistrationSystem.icons
     public partial class FrmYeniMüşteriEkle : Form
     {
 
-        SqlConnection bgl = new SqlConnection("Data Source=EMRE_SEFEROGLU\\SQLEXPRESS;Initial Catalog=PansiyonSistemi;Integrated Security=True;Encrypt=False");
+        Sql bgl = new Sql();
     
         public FrmYeniMüşteriEkle()
         {
@@ -123,15 +124,11 @@ namespace HotelRegistrationSystem.icons
             // Gün sayısını kullanarak fiyat hesapla
             price = Convert.ToInt32(result.TotalDays) * 50;
             TxtPrice.Text = price.ToString();
-
-
-
         }
 
         private void BtnSave_Click(object sender, EventArgs e)
         {
-            bgl.Open();
-            SqlCommand Komut = new SqlCommand("insert into MüsteriTable (Customer_Name, Customer_Surname, Customer_Gender, Customer_PhoneNumber, Customer_Mail, Customer_Tc, Customer_RoomNo, Customer_Price, Customer_EntryDate, Customer_ExitDate) values(@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9,@p10)", bgl);
+            SqlCommand Komut = new SqlCommand("insert into MüsteriTable (Customer_Name, Customer_Surname, Customer_Gender, Customer_PhoneNumber, Customer_Mail, Customer_Tc, Customer_RoomNo, Customer_Price, Customer_EntryDate, Customer_ExitDate) values(@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9,@p10)", bgl.sqlConnection());
 
             // Parametreleri ekleyin
             Komut.Parameters.AddWithValue("@p1", TxtName.Text);
@@ -156,9 +153,8 @@ namespace HotelRegistrationSystem.icons
             }
 
             Komut.ExecuteNonQuery();
-            bgl.Close();
+            bgl.sqlConnection().Close();
             MessageBox.Show("Müşteri Kaydı Yapıldı");
-
         }
     }
 }

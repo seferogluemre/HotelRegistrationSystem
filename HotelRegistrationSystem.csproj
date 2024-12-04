@@ -70,6 +70,7 @@
     <Compile Include="form\FrmYeniMüşteriEkle.Designer.cs">
       <DependentUpon>FrmYeniMüşteriEkle.cs</DependentUpon>
     </Compile>
+    <Compile Include="form\Sql.cs" />
     <Compile Include="PansiyonSistemiDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
