@@ -7,11 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Sql;
+using System.Data.SqlClient;
+
 
 namespace HotelRegistrationSystem.icons
 {
     public partial class FrmYeniMüşteriEkle : Form
     {
+
+        SqlConnection bgl = new SqlConnection("Data Source=EMRE_SEFEROGLU\\SQLEXPRESS;Initial Catalog=PansiyonSistemi;Integrated Security=True;Encrypt=False");
+    
         public FrmYeniMüşteriEkle()
         {
             InitializeComponent();
@@ -119,6 +125,24 @@ namespace HotelRegistrationSystem.icons
 
                 
 
+        }
+
+        private void BtnSave_Click(object sender, EventArgs e)
+        {
+            bgl.Open();
+            SqlCommand Komut = new SqlCommand("insert into MusteriTable (Customer_Name,Customer_Surname,Customer_Gender,Customer_PhoneNumber,Customer_Mail,Customer_Tc,Customer_RoomNo,Customer_Price,Customer_EntryDate,Customer_ExitDate) values(@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9,@p10)",bgl);
+            Komut.Parameters.AddWithValue("@p1", TxtName.Text);
+            Komut.Parameters.AddWithValue("@p2", TxtSurname.Text);
+            Komut.Parameters.AddWithValue("@p3", comboBox1.Text);
+            Komut.Parameters.AddWithValue("@p4", MskPhoneNmber.Text);
+            Komut.Parameters.AddWithValue("@p5", TxtMail.Text);
+            Komut.Parameters.AddWithValue("@p6", TxtTcNo.Text);
+            Komut.Parameters.AddWithValue("@p7", TxtRoomNo.Text);
+            Komut.Parameters.AddWithValue("@p8", TxtPrice.Text);
+            Komut.Parameters.AddWithValue("@p9", DateEntrance.Text);
+            Komut.Parameters.AddWithValue("@p10", DateExıt.Text);
+            Komut.ExecuteNonQuery();
+            MessageBox.Show("Müşteri Kaydı Yapıldı", "Kayıt İşlemi Başarılı");
         }
     }
 }

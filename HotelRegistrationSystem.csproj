@@ -70,6 +70,11 @@
     <Compile Include="form\FrmYeniMüşteriEkle.Designer.cs">
       <DependentUpon>FrmYeniMüşteriEkle.cs</DependentUpon>
     </Compile>
+    <Compile Include="PansiyonSistemiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PansiyonSistemiDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="form\FrmAdminGiris.resx">
@@ -93,6 +98,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="PansiyonSistemiDataSet.xsc">
+      <DependentUpon>PansiyonSistemiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PansiyonSistemiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PansiyonSistemiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PansiyonSistemiDataSet.xss">
+      <DependentUpon>PansiyonSistemiDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.TxtPrice = new System.Windows.Forms.TextBox();
@@ -68,7 +69,6 @@
             this.Btn103 = new System.Windows.Forms.Button();
             this.Btn102 = new System.Windows.Forms.Button();
             this.Btn101 = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -104,6 +104,17 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Müşteri Kayıt";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.Location = new System.Drawing.Point(339, 467);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(19, 21);
+            this.label11.TabIndex = 2;
+            this.label11.Text = "0";
+            this.label11.Visible = false;
             // 
             // comboBox1
             // 
@@ -160,6 +171,7 @@
             this.BtnSave.TabIndex = 32;
             this.BtnSave.Text = "Kaydet";
             this.BtnSave.UseVisualStyleBackColor = false;
+            this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
             // DateExıt
             // 
@@ -539,17 +551,6 @@
             this.Btn101.Text = "101";
             this.Btn101.UseVisualStyleBackColor = false;
             this.Btn101.Click += new System.EventHandler(this.Btn101_Click);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(339, 467);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(19, 21);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "0";
-            this.label11.Visible = false;
             // 
             // FrmYeniMüşteriEkle
             // 
