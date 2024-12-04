@@ -17,15 +17,6 @@ namespace HotelRegistrationSystem.icons
             InitializeComponent();
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TxtLoginDate_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void Btn101_Click(object sender, EventArgs e)
         {
@@ -112,8 +103,21 @@ namespace HotelRegistrationSystem.icons
             MessageBox.Show("Kırmızı Renkli Butonlar boş odaları gösterir","Mesaj");
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void DateExıt_ValueChanged(object sender, EventArgs e)
         {
+            int price = 0;
+            DateTime smallDate = Convert.ToDateTime(DateEntrance.Text);
+            DateTime bigDate = Convert.ToDateTime(DateExıt.Text);
+
+            TimeSpan result = bigDate - smallDate;
+
+            label11.Text = result.TotalDays.ToString()+" Gün Kalıcaksınız.";
+            label11.Visible = true;
+            price = Convert.ToInt32(label11.Text) * 50;
+            TxtPrice.Text = price.ToString();
+                
+
+                
 
         }
     }

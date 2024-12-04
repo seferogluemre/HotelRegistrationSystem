@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.TxtPrice = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.BtnSave = new System.Windows.Forms.Button();
@@ -66,14 +68,14 @@
             this.Btn103 = new System.Windows.Forms.Button();
             this.Btn102 = new System.Windows.Forms.Button();
             this.Btn101 = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.TxtPrice);
@@ -98,16 +100,39 @@
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.Location = new System.Drawing.Point(13, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(412, 504);
+            this.groupBox1.Size = new System.Drawing.Size(412, 545);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Müşteri Kayıt";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Erkek",
+            "Kadın"});
+            this.comboBox1.Location = new System.Drawing.Point(137, 111);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(238, 29);
+            this.comboBox1.TabIndex = 40;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label10.Location = new System.Drawing.Point(67, 115);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(66, 20);
+            this.label10.TabIndex = 39;
+            this.label10.Text = "Cinsiyet:";
             // 
             // TxtPrice
             // 
             this.TxtPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtPrice.Location = new System.Drawing.Point(139, 318);
+            this.TxtPrice.MaxLength = 10;
             this.TxtPrice.Name = "TxtPrice";
             this.TxtPrice.Size = new System.Drawing.Size(236, 29);
             this.TxtPrice.TabIndex = 36;
@@ -129,7 +154,7 @@
             this.BtnSave.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.BtnSave.FlatAppearance.BorderSize = 0;
             this.BtnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BtnSave.Location = new System.Drawing.Point(3, 463);
+            this.BtnSave.Location = new System.Drawing.Point(3, 504);
             this.BtnSave.Name = "BtnSave";
             this.BtnSave.Size = new System.Drawing.Size(406, 38);
             this.BtnSave.TabIndex = 32;
@@ -143,6 +168,7 @@
             this.DateExıt.Name = "DateExıt";
             this.DateExıt.Size = new System.Drawing.Size(236, 29);
             this.DateExıt.TabIndex = 31;
+            this.DateExıt.ValueChanged += new System.EventHandler(this.DateExıt_ValueChanged);
             // 
             // DateEntrance
             // 
@@ -151,7 +177,6 @@
             this.DateEntrance.Name = "DateEntrance";
             this.DateEntrance.Size = new System.Drawing.Size(236, 29);
             this.DateEntrance.TabIndex = 30;
-            this.DateEntrance.ValueChanged += new System.EventHandler(this.TxtLoginDate_ValueChanged);
             // 
             // TxtRoomNo
             // 
@@ -186,7 +211,6 @@
             this.TxtSurname.Name = "TxtSurname";
             this.TxtSurname.Size = new System.Drawing.Size(236, 29);
             this.TxtSurname.TabIndex = 26;
-            this.TxtSurname.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // TxtName
             // 
@@ -516,28 +540,16 @@
             this.Btn101.UseVisualStyleBackColor = false;
             this.Btn101.Click += new System.EventHandler(this.Btn101_Click);
             // 
-            // label10
+            // label11
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(67, 115);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(66, 20);
-            this.label10.TabIndex = 39;
-            this.label10.Text = "Cinsiyet:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Erkek",
-            "Kadın"});
-            this.comboBox1.Location = new System.Drawing.Point(137, 111);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(238, 29);
-            this.comboBox1.TabIndex = 40;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.Location = new System.Drawing.Point(339, 467);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(19, 21);
+            this.label11.TabIndex = 2;
+            this.label11.Text = "0";
+            this.label11.Visible = false;
             // 
             // FrmYeniMüşteriEkle
             // 
@@ -545,7 +557,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.ClientSize = new System.Drawing.Size(818, 529);
+            this.ClientSize = new System.Drawing.Size(818, 561);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -603,5 +615,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
     }
 }

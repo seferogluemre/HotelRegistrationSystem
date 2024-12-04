@@ -1,4 +1,5 @@
-﻿using HotelRegistrationSystem.icons;
+﻿using HotelRegistrationSystem.form;
+using HotelRegistrationSystem.icons;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace HotelRegistrationSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmYeniMüşteriEkle());
+            Application.Run(new FrmAnaForm());
         }
     }
 }

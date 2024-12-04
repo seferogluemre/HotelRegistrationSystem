@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HotelRegistrationSystem.icons;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,24 @@ namespace HotelRegistrationSystem.form
         public FrmAnaForm()
         {
             InitializeComponent();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            FrmAdminGiris fr = new FrmAdminGiris();
+            fr.Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            FrmYeniMüşteriEkle fr = new FrmYeniMüşteriEkle();
+            fr.Show();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            FrmOdalar frmOdalar = new FrmOdalar();
+            frmOdalar.Show();
         }
     }
 }
