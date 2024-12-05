@@ -136,6 +136,7 @@
     <Content Include="icons\icons8_eye_96px_1.png" />
     <Content Include="icons\icons8_hide_96px.png" />
     <Content Include="icons\icons8_manager_96px_1.png" />
+    <Content Include="icons\icons8_search_500px_5.png" />
     <Content Include="icons\indir.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -58,5 +58,22 @@ namespace HotelRegistrationSystem.form
         {
             DisplayData();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listView1.SelectedItems.Count == 0)
+            {
+                return;
+            }
+            /*Seçilen Satırı alıyoruz ve listViewItem degişkenine aktardık */
+            ListViewItem listViewItem = listView1.SelectedItems[0];
+
+
+
+        }
     }
 }
