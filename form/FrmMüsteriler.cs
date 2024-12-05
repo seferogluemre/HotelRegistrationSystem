@@ -30,6 +30,7 @@ namespace HotelRegistrationSystem.form
             TxtRoomNo.Clear();
             TxtTcNo.Clear();
             TxtGender.Clear();
+            TxtTcSorgu.Clear();
             DateExitPicker.Text = "";
             DateEntryPicker.Text = "";
         }
@@ -75,7 +76,25 @@ namespace HotelRegistrationSystem.form
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            string selectDataQuery = "select * from MüsteriTable where Customer_Tc=" + TxtTcSorgu.Text;
 
+            SqlCommand selectCommand = new SqlCommand(selectDataQuery, bgl.sqlConnection());
+            SqlDataReader dataReader = selectCommand.ExecuteReader();
+            if (dataReader.Read())
+            {
+                TxtId.Text = dataReader[0].ToString();
+                TxtName.Text= dataReader[1].ToString();
+                TxtSurname.Text = dataReader[2].ToString();
+                TxtGender.Text= dataReader[3].ToString();
+                TxtPhoneNumber.Text= dataReader[4].ToString(); 
+                TxtMail.Text= dataReader[5].ToString();
+                TxtTcNo.Text= dataReader[6].ToString();
+                TxtRoomNo.Text = dataReader[7].ToString();
+                TxtPrice.Text = dataReader[8].ToString();
+                DateExitPicker.Text= dataReader[9].ToString();
+                DateEntryPicker.Text = dataReader[10].ToString();
+            }
+            bgl.sqlConnection().Close();
         }
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
