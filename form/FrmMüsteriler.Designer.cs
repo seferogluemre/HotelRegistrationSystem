@@ -69,6 +69,7 @@
             this.DateEntryPicker = new System.Windows.Forms.DateTimePicker();
             this.DateExitPicker = new System.Windows.Forms.DateTimePicker();
             this.label12 = new System.Windows.Forms.Label();
+            this.BtnClear = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -170,7 +171,7 @@
             this.BtnVerileriSil.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnVerileriSil.FlatAppearance.BorderSize = 0;
             this.BtnVerileriSil.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnVerileriSil.Location = new System.Drawing.Point(883, 60);
+            this.BtnVerileriSil.Location = new System.Drawing.Point(883, 53);
             this.BtnVerileriSil.Name = "BtnVerileriSil";
             this.BtnVerileriSil.Size = new System.Drawing.Size(137, 33);
             this.BtnVerileriSil.TabIndex = 2;
@@ -184,17 +185,18 @@
             this.BtnVeriGüncelleme.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnVeriGüncelleme.FlatAppearance.BorderSize = 0;
             this.BtnVeriGüncelleme.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnVeriGüncelleme.Location = new System.Drawing.Point(883, 111);
+            this.BtnVeriGüncelleme.Location = new System.Drawing.Point(883, 92);
             this.BtnVeriGüncelleme.Name = "BtnVeriGüncelleme";
             this.BtnVeriGüncelleme.Size = new System.Drawing.Size(137, 33);
             this.BtnVeriGüncelleme.TabIndex = 3;
             this.BtnVeriGüncelleme.Text = "Verileri Güncelle";
             this.BtnVeriGüncelleme.UseVisualStyleBackColor = false;
+            this.BtnVeriGüncelleme.Click += new System.EventHandler(this.BtnVeriGüncelleme_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(978, 184);
+            this.pictureBox1.Location = new System.Drawing.Point(978, 190);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(41, 33);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -206,7 +208,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(792, 184);
+            this.textBox1.Location = new System.Drawing.Point(792, 190);
             this.textBox1.MaxLength = 11;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(180, 33);
@@ -215,7 +217,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(728, 190);
+            this.label1.Location = new System.Drawing.Point(728, 196);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 21);
             this.label1.TabIndex = 6;
@@ -406,6 +408,20 @@
             this.label12.TabIndex = 27;
             this.label12.Text = "Çıkış Tarihi:";
             // 
+            // BtnClear
+            // 
+            this.BtnClear.BackColor = System.Drawing.Color.OliveDrab;
+            this.BtnClear.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnClear.FlatAppearance.BorderSize = 0;
+            this.BtnClear.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnClear.Location = new System.Drawing.Point(883, 131);
+            this.BtnClear.Name = "BtnClear";
+            this.BtnClear.Size = new System.Drawing.Size(137, 33);
+            this.BtnClear.TabIndex = 29;
+            this.BtnClear.Text = "Alanları Temizle";
+            this.BtnClear.UseVisualStyleBackColor = false;
+            this.BtnClear.Click += new System.EventHandler(this.BtnClear_Click);
+            // 
             // FrmMüsteriler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
@@ -413,6 +429,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1032, 453);
+            this.Controls.Add(this.BtnClear);
             this.Controls.Add(this.DateExitPicker);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.DateEntryPicker);
@@ -450,7 +467,6 @@
             this.Name = "FrmMüsteriler";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Müşteriler";
-            this.Load += new System.EventHandler(this.FrmMüsteriler_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -499,5 +515,6 @@
         private System.Windows.Forms.DateTimePicker DateEntryPicker;
         private System.Windows.Forms.DateTimePicker DateExitPicker;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button BtnClear;
     }
 }

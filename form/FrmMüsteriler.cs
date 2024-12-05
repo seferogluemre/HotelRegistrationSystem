@@ -16,6 +16,23 @@ namespace HotelRegistrationSystem.form
         /// <summary>
         /// 
         /// </summary>
+        /// 
+
+        private void ClearAreas()
+        {
+            TxtId.Clear();
+            TxtName.Clear();
+            TxtSurname.Clear();
+            TxtPrice.Clear();
+            TxtPhoneNumber.Clear();
+            TxtMail.Clear();
+            TxtRoomNo.Clear();
+            TxtTcNo.Clear();
+            TxtGender.Clear();
+            DateExitPicker.Text = "";
+            DateEntryPicker.Text = "";
+        }
+
         private void DisplayData()
         {
             SqlCommand command = new SqlCommand("select * from MüsteriTable", bgl.sqlConnection());
@@ -49,10 +66,6 @@ namespace HotelRegistrationSystem.form
             bgl.sqlConnection().Close();
         }
 
-
-        private void FrmMüsteriler_Load(object sender, EventArgs e)
-        {
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -101,12 +114,22 @@ namespace HotelRegistrationSystem.form
                     MessageBox.Show("Silme işlemi tamamlandı");
                     bgl.sqlConnection().Close();
                     DisplayData();
+                    ClearAreas();
                 }
                 else if (tepki == DialogResult.No)
                 {
                     return;
                 }
             }
+        }
+
+        private void BtnVeriGüncelleme_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void BtnClear_Click(object sender, EventArgs e)
+        {
+            ClearAreas();
         }
     }
 }
