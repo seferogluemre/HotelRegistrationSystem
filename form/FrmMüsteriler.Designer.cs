@@ -45,7 +45,7 @@
             this.BtnVerileriSil = new System.Windows.Forms.Button();
             this.BtnVeriGüncelleme = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TxtTcSorgu = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.TxtId = new System.Windows.Forms.TextBox();
@@ -55,7 +55,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.TxtSurname = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.TxtPhoneNumber = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.TxtPrice = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -70,6 +69,7 @@
             this.DateExitPicker = new System.Windows.Forms.DateTimePicker();
             this.label12 = new System.Windows.Forms.Label();
             this.BtnClear = new System.Windows.Forms.Button();
+            this.TxtPhoneNumber = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -205,14 +205,14 @@
             this.pictureBox1.UseWaitCursor = true;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // textBox1
+            // TxtTcSorgu
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(792, 190);
-            this.textBox1.MaxLength = 11;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(180, 33);
-            this.textBox1.TabIndex = 5;
+            this.TxtTcSorgu.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtTcSorgu.Location = new System.Drawing.Point(792, 190);
+            this.TxtTcSorgu.MaxLength = 11;
+            this.TxtTcSorgu.Name = "TxtTcSorgu";
+            this.TxtTcSorgu.Size = new System.Drawing.Size(180, 33);
+            this.TxtTcSorgu.TabIndex = 5;
             // 
             // label1
             // 
@@ -290,14 +290,6 @@
             this.label5.Size = new System.Drawing.Size(63, 21);
             this.label5.TabIndex = 11;
             this.label5.Text = "Soyadı:";
-            // 
-            // TxtPhoneNumber
-            // 
-            this.TxtPhoneNumber.Location = new System.Drawing.Point(73, 211);
-            this.TxtPhoneNumber.MaxLength = 500;
-            this.TxtPhoneNumber.Name = "TxtPhoneNumber";
-            this.TxtPhoneNumber.Size = new System.Drawing.Size(164, 29);
-            this.TxtPhoneNumber.TabIndex = 16;
             // 
             // label6
             // 
@@ -422,6 +414,14 @@
             this.BtnClear.UseVisualStyleBackColor = false;
             this.BtnClear.Click += new System.EventHandler(this.BtnClear_Click);
             // 
+            // TxtPhoneNumber
+            // 
+            this.TxtPhoneNumber.Location = new System.Drawing.Point(74, 214);
+            this.TxtPhoneNumber.Mask = "(999) 000-0000";
+            this.TxtPhoneNumber.Name = "TxtPhoneNumber";
+            this.TxtPhoneNumber.Size = new System.Drawing.Size(163, 29);
+            this.TxtPhoneNumber.TabIndex = 31;
+            // 
             // FrmMüsteriler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
@@ -429,6 +429,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1032, 453);
+            this.Controls.Add(this.TxtPhoneNumber);
             this.Controls.Add(this.BtnClear);
             this.Controls.Add(this.DateExitPicker);
             this.Controls.Add(this.label12);
@@ -442,7 +443,6 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.TxtMail);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.TxtPhoneNumber);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.TxtGender);
             this.Controls.Add(this.label4);
@@ -453,7 +453,7 @@
             this.Controls.Add(this.TxtId);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TxtTcSorgu);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnVeriGüncelleme);
             this.Controls.Add(this.BtnVerileriSil);
@@ -491,7 +491,7 @@
         private System.Windows.Forms.Button BtnVerileriSil;
         private System.Windows.Forms.Button BtnVeriGüncelleme;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtTcSorgu;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox TxtId;
@@ -501,7 +501,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox TxtSurname;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox TxtPhoneNumber;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox TxtPrice;
         private System.Windows.Forms.Label label7;
@@ -516,5 +515,6 @@
         private System.Windows.Forms.DateTimePicker DateExitPicker;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button BtnClear;
+        private System.Windows.Forms.MaskedTextBox TxtPhoneNumber;
     }
 }

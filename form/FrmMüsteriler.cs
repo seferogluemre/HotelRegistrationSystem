@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
@@ -125,8 +126,60 @@ namespace HotelRegistrationSystem.form
 
         private void BtnVeriGüncelleme_Click(object sender, EventArgs e)
         {
+            if (TxtId.Text != "")
+            {
+                string updatedDataQuery = "UPDATE MüsteriTable SET " +
+                                          "Customer_Name = @CustomerName, " +
+                                          "Customer_Surname = @CustomerSurname, " +
+                                          "Customer_Mail = @CustomerEmail, " +
+                                          "Customer_PhoneNumber = @CustomerPhone, " +
+                                          "Customer_Gender = @CustomerGender, " +
+                                          "Customer_Tc = @CustomerTc, " +
+                                          "Customer_RoomNo = @CustomerRoomNo, " +
+                                          "Customer_Price = @CustomerPrice, " +
+                                          "Customer_EntryDate = @CustomerEntryDate, " +
+                                          "Customer_ExitDate = @CustomerExitDate " +
+                                          "WHERE Customer_Id = @CustomerID";
+
+                SqlCommand command = new SqlCommand(updatedDataQuery, bgl.sqlConnection());
+
+                // Parametreleri ekle
+                command.Parameters.AddWithValue("@CustomerName", TxtName.Text);
+                command.Parameters.AddWithValue("@CustomerSurname", TxtSurname.Text);
+                command.Parameters.AddWithValue("@CustomerEmail", TxtMail.Text);
+                command.Parameters.AddWithValue("@CustomerPhone", TxtPhoneNumber.Text);
+                command.Parameters.AddWithValue("@CustomerGender", TxtGender.Text);
+                command.Parameters.AddWithValue("@CustomerTc", TxtTcNo.Text);
+                command.Parameters.AddWithValue("@CustomerRoomNo", TxtRoomNo.Text);
+                command.Parameters.AddWithValue("@CustomerPrice", TxtPrice.Text);
+
+                // Tarih parametreleri
+                command.Parameters.AddWithValue("@CustomerEntryDate", DateEntryPicker.Value.ToString("yyyy-MM-dd"));
+                command.Parameters.AddWithValue("@CustomerExitDate", DateExitPicker.Value.ToString("yyyy-MM-dd"));
+
+                // ID parametresi
+                command.Parameters.AddWithValue("@CustomerID", int.TryParse(TxtId.Text, out int customerId) ? customerId : 0);
+
+                // Bağlantıyı kontrol et ve aç
+                SqlConnection conn = bgl.sqlConnection();
+                if (conn.State != ConnectionState.Open)
+                {
+                    conn.Open();
+                }
+
+                // Sorguyu çalıştır
+                command.ExecuteNonQuery();
+                conn.Close();
+
+                MessageBox.Show("Müşteri bilgileri güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Güncellenecek müşteri bulunamadı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
         }
+
         private void BtnClear_Click(object sender, EventArgs e)
         {
             ClearAreas();
