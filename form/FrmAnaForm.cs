@@ -35,5 +35,11 @@ namespace HotelRegistrationSystem.form
             FrmOdalar frmOdalar = new FrmOdalar();
             frmOdalar.Show();
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            FrmMüsteriler frm = new FrmMüsteriler();
+            frm.Show();
+        }
     }
 }
