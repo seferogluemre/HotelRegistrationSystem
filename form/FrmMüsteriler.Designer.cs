@@ -48,26 +48,26 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.TxtId = new System.Windows.Forms.TextBox();
+            this.TxtName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.TxtGender = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.TxtSurname = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.TxtPhoneNumber = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.TxtPrice = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.TxtRoomNo = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.TxtTcNo = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.TxtMail = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.DateEntryPicker = new System.Windows.Forms.DateTimePicker();
+            this.DateExitPicker = new System.Windows.Forms.DateTimePicker();
             this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -128,7 +128,7 @@
             // columnHeader7
             // 
             this.columnHeader7.Text = "Tc Kimlik No";
-            this.columnHeader7.Width = 124;
+            this.columnHeader7.Width = 117;
             // 
             // columnHeader8
             // 
@@ -138,7 +138,7 @@
             // columnHeader9
             // 
             this.columnHeader9.Text = "Fiyat";
-            this.columnHeader9.Width = 84;
+            this.columnHeader9.Width = 78;
             // 
             // columnHeader10
             // 
@@ -229,21 +229,21 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Id:";
             // 
-            // textBox2
+            // TxtId
             // 
-            this.textBox2.Location = new System.Drawing.Point(73, 10);
-            this.textBox2.MaxLength = 500;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(164, 29);
-            this.textBox2.TabIndex = 8;
+            this.TxtId.Location = new System.Drawing.Point(73, 10);
+            this.TxtId.MaxLength = 500;
+            this.TxtId.Name = "TxtId";
+            this.TxtId.Size = new System.Drawing.Size(164, 29);
+            this.TxtId.TabIndex = 8;
             // 
-            // textBox3
+            // TxtName
             // 
-            this.textBox3.Location = new System.Drawing.Point(73, 62);
-            this.textBox3.MaxLength = 500;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(164, 29);
-            this.textBox3.TabIndex = 10;
+            this.TxtName.Location = new System.Drawing.Point(73, 62);
+            this.TxtName.MaxLength = 500;
+            this.TxtName.Name = "TxtName";
+            this.TxtName.Size = new System.Drawing.Size(164, 29);
+            this.TxtName.TabIndex = 10;
             // 
             // label3
             // 
@@ -254,13 +254,13 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Adı:";
             // 
-            // textBox4
+            // TxtGender
             // 
-            this.textBox4.Location = new System.Drawing.Point(73, 165);
-            this.textBox4.MaxLength = 500;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(164, 29);
-            this.textBox4.TabIndex = 14;
+            this.TxtGender.Location = new System.Drawing.Point(73, 165);
+            this.TxtGender.MaxLength = 500;
+            this.TxtGender.Name = "TxtGender";
+            this.TxtGender.Size = new System.Drawing.Size(164, 29);
+            this.TxtGender.TabIndex = 14;
             // 
             // label4
             // 
@@ -271,13 +271,13 @@
             this.label4.TabIndex = 13;
             this.label4.Text = "Cinsiyet:";
             // 
-            // textBox5
+            // TxtSurname
             // 
-            this.textBox5.Location = new System.Drawing.Point(73, 113);
-            this.textBox5.MaxLength = 500;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(164, 29);
-            this.textBox5.TabIndex = 12;
+            this.TxtSurname.Location = new System.Drawing.Point(73, 113);
+            this.TxtSurname.MaxLength = 500;
+            this.TxtSurname.Name = "TxtSurname";
+            this.TxtSurname.Size = new System.Drawing.Size(164, 29);
+            this.TxtSurname.TabIndex = 12;
             // 
             // label5
             // 
@@ -288,13 +288,13 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "Soyadı:";
             // 
-            // textBox6
+            // TxtPhoneNumber
             // 
-            this.textBox6.Location = new System.Drawing.Point(73, 211);
-            this.textBox6.MaxLength = 500;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(164, 29);
-            this.textBox6.TabIndex = 16;
+            this.TxtPhoneNumber.Location = new System.Drawing.Point(73, 211);
+            this.TxtPhoneNumber.MaxLength = 500;
+            this.TxtPhoneNumber.Name = "TxtPhoneNumber";
+            this.TxtPhoneNumber.Size = new System.Drawing.Size(164, 29);
+            this.TxtPhoneNumber.TabIndex = 16;
             // 
             // label6
             // 
@@ -305,13 +305,13 @@
             this.label6.TabIndex = 15;
             this.label6.Text = "Tel No:";
             // 
-            // textBox7
+            // TxtPrice
             // 
-            this.textBox7.Location = new System.Drawing.Point(353, 165);
-            this.textBox7.MaxLength = 500;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(164, 29);
-            this.textBox7.TabIndex = 24;
+            this.TxtPrice.Location = new System.Drawing.Point(353, 165);
+            this.TxtPrice.MaxLength = 500;
+            this.TxtPrice.Name = "TxtPrice";
+            this.TxtPrice.Size = new System.Drawing.Size(164, 29);
+            this.TxtPrice.TabIndex = 24;
             // 
             // label7
             // 
@@ -322,13 +322,13 @@
             this.label7.TabIndex = 23;
             this.label7.Text = "Fiyat:";
             // 
-            // textBox8
+            // TxtRoomNo
             // 
-            this.textBox8.Location = new System.Drawing.Point(353, 113);
-            this.textBox8.MaxLength = 500;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(164, 29);
-            this.textBox8.TabIndex = 22;
+            this.TxtRoomNo.Location = new System.Drawing.Point(353, 113);
+            this.TxtRoomNo.MaxLength = 500;
+            this.TxtRoomNo.Name = "TxtRoomNo";
+            this.TxtRoomNo.Size = new System.Drawing.Size(164, 29);
+            this.TxtRoomNo.TabIndex = 22;
             // 
             // label8
             // 
@@ -339,13 +339,13 @@
             this.label8.TabIndex = 21;
             this.label8.Text = "Oda No:";
             // 
-            // textBox9
+            // TxtTcNo
             // 
-            this.textBox9.Location = new System.Drawing.Point(353, 62);
-            this.textBox9.MaxLength = 500;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(164, 29);
-            this.textBox9.TabIndex = 20;
+            this.TxtTcNo.Location = new System.Drawing.Point(353, 62);
+            this.TxtTcNo.MaxLength = 500;
+            this.TxtTcNo.Name = "TxtTcNo";
+            this.TxtTcNo.Size = new System.Drawing.Size(164, 29);
+            this.TxtTcNo.TabIndex = 20;
             // 
             // label9
             // 
@@ -356,13 +356,13 @@
             this.label9.TabIndex = 19;
             this.label9.Text = "TC No:";
             // 
-            // textBox10
+            // TxtMail
             // 
-            this.textBox10.Location = new System.Drawing.Point(353, 10);
-            this.textBox10.MaxLength = 500;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(164, 29);
-            this.textBox10.TabIndex = 18;
+            this.TxtMail.Location = new System.Drawing.Point(353, 10);
+            this.TxtMail.MaxLength = 500;
+            this.TxtMail.Name = "TxtMail";
+            this.TxtMail.Size = new System.Drawing.Size(164, 29);
+            this.TxtMail.TabIndex = 18;
             // 
             // label10
             // 
@@ -382,19 +382,19 @@
             this.label11.TabIndex = 25;
             this.label11.Text = "Giriş Tarihi:";
             // 
-            // dateTimePicker1
+            // DateEntryPicker
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(618, 10);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(227, 29);
-            this.dateTimePicker1.TabIndex = 26;
+            this.DateEntryPicker.Location = new System.Drawing.Point(618, 10);
+            this.DateEntryPicker.Name = "DateEntryPicker";
+            this.DateEntryPicker.Size = new System.Drawing.Size(227, 29);
+            this.DateEntryPicker.TabIndex = 26;
             // 
-            // dateTimePicker2
+            // DateExitPicker
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(618, 59);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(227, 29);
-            this.dateTimePicker2.TabIndex = 28;
+            this.DateExitPicker.Location = new System.Drawing.Point(618, 59);
+            this.DateExitPicker.Name = "DateExitPicker";
+            this.DateExitPicker.Size = new System.Drawing.Size(227, 29);
+            this.DateExitPicker.TabIndex = 28;
             // 
             // label12
             // 
@@ -412,27 +412,27 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1032, 453);
-            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.DateExitPicker);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.DateEntryPicker);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.TxtPrice);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.TxtRoomNo);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.TxtTcNo);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.TxtMail);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.TxtPhoneNumber);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.TxtGender);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.TxtSurname);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.TxtName);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.TxtId);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
@@ -477,26 +477,26 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox TxtId;
+        private System.Windows.Forms.TextBox TxtName;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox TxtGender;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox TxtSurname;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox TxtPhoneNumber;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox TxtPrice;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox TxtRoomNo;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox TxtTcNo;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox TxtMail;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker DateEntryPicker;
+        private System.Windows.Forms.DateTimePicker DateExitPicker;
         private System.Windows.Forms.Label label12;
     }
 }

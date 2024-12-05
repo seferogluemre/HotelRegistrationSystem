@@ -72,8 +72,18 @@ namespace HotelRegistrationSystem.form
             /*Seçilen Satırı alıyoruz ve listViewItem degişkenine aktardık */
             ListViewItem listViewItem = listView1.SelectedItems[0];
 
+            TxtId.Text = listView1.SelectedItems[0].Text; // İlk sütun, genellikle ana öğedir (ID).
 
-
+            TxtName.Text = listView1.SelectedItems[0].SubItems[1].Text;
+            TxtSurname.Text = listView1.SelectedItems[0].SubItems[2].Text;
+            TxtGender.Text = listView1.SelectedItems[0].SubItems[3].Text;
+            TxtPhoneNumber.Text = listView1.SelectedItems[0].SubItems[4].Text;
+            TxtMail.Text = listView1.SelectedItems[0].SubItems[5].Text;
+            TxtTcNo.Text = listView1.SelectedItems[0].SubItems[6].Text;
+            TxtRoomNo.Text = listView1.SelectedItems[0].SubItems[7].Text;
+            TxtPrice.Text = listView1.SelectedItems[0].SubItems[8].Text;
+            DateEntryPicker.Text = listView1.SelectedItems[0].SubItems[9].Text;
+            DateExitPicker.Text = listView1.SelectedItems[0].SubItems[10].Text;
         }
     }
 }
