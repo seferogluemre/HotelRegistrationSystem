@@ -85,5 +85,28 @@ namespace HotelRegistrationSystem.form
             DateEntryPicker.Text = listView1.SelectedItems[0].SubItems[9].Text;
             DateExitPicker.Text = listView1.SelectedItems[0].SubItems[10].Text;
         }
+
+        private void BtnVerileriSil_Click(object sender, EventArgs e)
+        {
+            string deleteDataQuery = "delete  from MüsteriTable where Customer_Id=" + TxtId.Text;
+            DialogResult tepki = new DialogResult();
+
+            if (TxtId.Text != "")
+            {
+                tepki = MessageBox.Show(TxtName.Text + " Adlı Müşteriyi silmek istediginize emin misiniz?", "Silme işlemi", MessageBoxButtons.YesNo);
+                if (tepki == DialogResult.Yes)
+                {
+                    SqlCommand kmt = new SqlCommand(deleteDataQuery, bgl.sqlConnection());
+                    kmt.ExecuteNonQuery();
+                    MessageBox.Show("Silme işlemi tamamlandı");
+                    bgl.sqlConnection().Close();
+                    DisplayData();
+                }
+                else if (tepki == DialogResult.No)
+                {
+                    return;
+                }
+            }
+        }
     }
 }

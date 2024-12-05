@@ -176,6 +176,7 @@
             this.BtnVerileriSil.TabIndex = 2;
             this.BtnVerileriSil.Text = "Verileri Sil";
             this.BtnVerileriSil.UseVisualStyleBackColor = false;
+            this.BtnVerileriSil.Click += new System.EventHandler(this.BtnVerileriSil_Click);
             // 
             // BtnVeriGüncelleme
             // 
