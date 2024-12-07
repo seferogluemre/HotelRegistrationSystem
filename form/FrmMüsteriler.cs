@@ -41,29 +41,22 @@ namespace HotelRegistrationSystem.form
             SqlDataReader dr = command.ExecuteReader();
             while (dr.Read())
             {
-                if (listView1.Items.Count > 0)
-                {
-                    MessageBox.Show("Müşteriler zaten gözüküyor");
-                    return;
-                }
-                else
-                {
-                    ListViewItem item = new ListViewItem(dr[0].ToString());
-                    // Alt öğeleri ekleyin
-                    item.SubItems.Add(dr[1].ToString());
-                    item.SubItems.Add(dr[2].ToString());
-                    item.SubItems.Add(dr[3].ToString());
-                    item.SubItems.Add(dr[4].ToString());
-                    item.SubItems.Add(dr[5].ToString());
-                    item.SubItems.Add(dr[6].ToString());
-                    item.SubItems.Add(dr[7].ToString());
-                    item.SubItems.Add(dr[8].ToString());
-                    item.SubItems.Add(dr[9].ToString());
-                    item.SubItems.Add(dr[10].ToString());
 
-                    // ListView'e öğeyi ekleyin
-                    listView1.Items.Add(item);
-                }
+                ListViewItem item = new ListViewItem(dr[0].ToString());
+                // Alt öğeleri ekleyin
+                item.SubItems.Add(dr[1].ToString());
+                item.SubItems.Add(dr[2].ToString());
+                item.SubItems.Add(dr[3].ToString());
+                item.SubItems.Add(dr[4].ToString());
+                item.SubItems.Add(dr[5].ToString());
+                item.SubItems.Add(dr[6].ToString());
+                item.SubItems.Add(dr[7].ToString());
+                item.SubItems.Add(dr[8].ToString());
+                item.SubItems.Add(dr[9].ToString());
+                item.SubItems.Add(dr[10].ToString());
+
+                // ListView'e öğeyi ekleyin
+                listView1.Items.Add(item);
             }
             bgl.sqlConnection().Close();
         }
@@ -76,23 +69,27 @@ namespace HotelRegistrationSystem.form
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            string selectDataQuery = "select * from MüsteriTable where Customer_Tc=" + TxtTcSorgu.Text;
+            string selectDataQuery = "select * from MüsteriTable where Customer_Tc like '%" + TxtTcSorgu.Text + "%'";
 
             SqlCommand selectCommand = new SqlCommand(selectDataQuery, bgl.sqlConnection());
             SqlDataReader dataReader = selectCommand.ExecuteReader();
             if (dataReader.Read())
             {
-                TxtId.Text = dataReader[0].ToString();
-                TxtName.Text= dataReader[1].ToString();
-                TxtSurname.Text = dataReader[2].ToString();
-                TxtGender.Text= dataReader[3].ToString();
-                TxtPhoneNumber.Text= dataReader[4].ToString(); 
-                TxtMail.Text= dataReader[5].ToString();
-                TxtTcNo.Text= dataReader[6].ToString();
-                TxtRoomNo.Text = dataReader[7].ToString();
-                TxtPrice.Text = dataReader[8].ToString();
-                DateExitPicker.Text= dataReader[9].ToString();
-                DateEntryPicker.Text = dataReader[10].ToString();
+                ListViewItem item = new ListViewItem(dataReader[0].ToString());
+                // Alt öğeleri ekleyin
+                item.SubItems.Add(dataReader[1].ToString());
+                item.SubItems.Add(dataReader[2].ToString());
+                item.SubItems.Add(dataReader[3].ToString());
+                item.SubItems.Add(dataReader[4].ToString());
+                item.SubItems.Add(dataReader[5].ToString());
+                item.SubItems.Add(dataReader[6].ToString());
+                item.SubItems.Add(dataReader[7].ToString());
+                item.SubItems.Add(dataReader[8].ToString());
+                item.SubItems.Add(dataReader[9].ToString());
+                item.SubItems.Add(dataReader[10].ToString());
+
+                // ListView'e öğeyi ekleyin
+                listView1.Items.Add(item);
             }
             bgl.sqlConnection().Close();
         }

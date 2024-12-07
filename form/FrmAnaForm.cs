@@ -41,5 +41,20 @@ namespace HotelRegistrationSystem.form
             FrmMüsteriler frm = new FrmMüsteriler();
             frm.Show();
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            DialogResult tepki = new DialogResult();
+            tepki = MessageBox.Show("Çıkmak istediginize emin misiniz", "Uygulamadan ayrılıyorsunuz", MessageBoxButtons.YesNo);
+            if (tepki == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("AYÇİÇEGİ PANSİYON KAYIT SİSTEMİ", "YES PANSİYON SİSTEMLERİ", MessageBoxButtons.OK);
+        }
     }
 }
