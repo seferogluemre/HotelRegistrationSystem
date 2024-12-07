@@ -128,7 +128,7 @@ namespace HotelRegistrationSystem.icons
 
         private void BtnSave_Click(object sender, EventArgs e)
         {
-            SqlCommand Komut = new SqlCommand("insert into MüsteriTable (Customer_Name, Customer_Surname, Customer_Gender, Customer_PhoneNumber, Customer_Mail, Customer_Tc, Customer_RoomNo, Customer_Price, Customer_EntryDate, Customer_ExitDate) values(@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9,@p10)", bgl.sqlConnection());
+            SqlCommand Komut = new SqlCommand("insert into MüsteriTable (Customer_Name, Customer_Surname, Customer_Gender, Customer_PhoneNumber, Customer_Mail, Customer_Tc, Customer_RoomNo, Customer_Price, Customer_EntryDate, Customer_ExitDate,Customer_Count) values(@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9,@p10,@p11)"+ "insert into Odalar (Oda_No,Oda_Durumu,Oda_Kapasitesi,OdadaKalanKisi_Tc) values (@o1,@o2,@o3,@o4)", bgl.sqlConnection());
 
             // Parametreleri ekleyin
             Komut.Parameters.AddWithValue("@p1", TxtName.Text);
@@ -139,6 +139,16 @@ namespace HotelRegistrationSystem.icons
             Komut.Parameters.AddWithValue("@p6", TxtTcNo.Text);
             Komut.Parameters.AddWithValue("@p7", TxtRoomNo.Text);
             Komut.Parameters.AddWithValue("@p8", TxtPrice.Text);
+            Komut.Parameters.AddWithValue("@p11",TxtKişi.Text);
+
+
+            Komut.Parameters.AddWithValue("@o1", TxtRoomNo.Text);
+            Komut.Parameters.AddWithValue("@o2", "Dolu");
+            Komut.Parameters.AddWithValue("@o3", TxtKişi.Text);
+            Komut.Parameters.AddWithValue("@o4", TxtTcNo.Text.ToString());
+
+
+
 
             DateTime entryDate, exitDate;
             if (DateTime.TryParse(DateEntrance.Text, out entryDate) && DateTime.TryParse(DateExıt.Text, out exitDate))

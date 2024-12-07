@@ -49,9 +49,9 @@
             // 
             this.Btn115.BackColor = System.Drawing.Color.GreenYellow;
             this.Btn115.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btn115.Location = new System.Drawing.Point(288, 192);
+            this.Btn115.Location = new System.Drawing.Point(578, 194);
             this.Btn115.Name = "Btn115";
-            this.Btn115.Size = new System.Drawing.Size(57, 38);
+            this.Btn115.Size = new System.Drawing.Size(125, 76);
             this.Btn115.TabIndex = 29;
             this.Btn115.Text = "115";
             this.Btn115.UseVisualStyleBackColor = false;
@@ -60,9 +60,9 @@
             // 
             this.Btn114.BackColor = System.Drawing.Color.GreenYellow;
             this.Btn114.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btn114.Location = new System.Drawing.Point(225, 192);
+            this.Btn114.Location = new System.Drawing.Point(441, 194);
             this.Btn114.Name = "Btn114";
-            this.Btn114.Size = new System.Drawing.Size(57, 38);
+            this.Btn114.Size = new System.Drawing.Size(125, 76);
             this.Btn114.TabIndex = 28;
             this.Btn114.Text = "114";
             this.Btn114.UseVisualStyleBackColor = false;
@@ -71,9 +71,9 @@
             // 
             this.Btn113.BackColor = System.Drawing.Color.GreenYellow;
             this.Btn113.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btn113.Location = new System.Drawing.Point(162, 192);
+            this.Btn113.Location = new System.Drawing.Point(299, 194);
             this.Btn113.Name = "Btn113";
-            this.Btn113.Size = new System.Drawing.Size(57, 38);
+            this.Btn113.Size = new System.Drawing.Size(125, 76);
             this.Btn113.TabIndex = 27;
             this.Btn113.Text = "113";
             this.Btn113.UseVisualStyleBackColor = false;
@@ -82,9 +82,9 @@
             // 
             this.Btn112.BackColor = System.Drawing.Color.GreenYellow;
             this.Btn112.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btn112.Location = new System.Drawing.Point(99, 192);
+            this.Btn112.Location = new System.Drawing.Point(158, 194);
             this.Btn112.Name = "Btn112";
-            this.Btn112.Size = new System.Drawing.Size(57, 38);
+            this.Btn112.Size = new System.Drawing.Size(125, 76);
             this.Btn112.TabIndex = 26;
             this.Btn112.Text = "112";
             this.Btn112.UseVisualStyleBackColor = false;
@@ -93,9 +93,9 @@
             // 
             this.Btn111.BackColor = System.Drawing.Color.GreenYellow;
             this.Btn111.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btn111.Location = new System.Drawing.Point(36, 193);
+            this.Btn111.Location = new System.Drawing.Point(12, 194);
             this.Btn111.Name = "Btn111";
-            this.Btn111.Size = new System.Drawing.Size(57, 38);
+            this.Btn111.Size = new System.Drawing.Size(125, 76);
             this.Btn111.TabIndex = 25;
             this.Btn111.Text = "111";
             this.Btn111.UseVisualStyleBackColor = false;
@@ -104,9 +104,9 @@
             // 
             this.Btn110.BackColor = System.Drawing.Color.GreenYellow;
             this.Btn110.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btn110.Location = new System.Drawing.Point(288, 113);
+            this.Btn110.Location = new System.Drawing.Point(578, 115);
             this.Btn110.Name = "Btn110";
-            this.Btn110.Size = new System.Drawing.Size(57, 38);
+            this.Btn110.Size = new System.Drawing.Size(125, 76);
             this.Btn110.TabIndex = 24;
             this.Btn110.Text = "110";
             this.Btn110.UseVisualStyleBackColor = false;
@@ -115,9 +115,9 @@
             // 
             this.Btn109.BackColor = System.Drawing.Color.GreenYellow;
             this.Btn109.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btn109.Location = new System.Drawing.Point(225, 113);
+            this.Btn109.Location = new System.Drawing.Point(441, 115);
             this.Btn109.Name = "Btn109";
-            this.Btn109.Size = new System.Drawing.Size(57, 38);
+            this.Btn109.Size = new System.Drawing.Size(125, 76);
             this.Btn109.TabIndex = 23;
             this.Btn109.Text = "109";
             this.Btn109.UseVisualStyleBackColor = false;
@@ -126,9 +126,9 @@
             // 
             this.Btn108.BackColor = System.Drawing.Color.GreenYellow;
             this.Btn108.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btn108.Location = new System.Drawing.Point(162, 113);
+            this.Btn108.Location = new System.Drawing.Point(299, 115);
             this.Btn108.Name = "Btn108";
-            this.Btn108.Size = new System.Drawing.Size(57, 38);
+            this.Btn108.Size = new System.Drawing.Size(125, 76);
             this.Btn108.TabIndex = 22;
             this.Btn108.Text = "108";
             this.Btn108.UseVisualStyleBackColor = false;
@@ -137,9 +137,9 @@
             // 
             this.Btn107.BackColor = System.Drawing.Color.GreenYellow;
             this.Btn107.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btn107.Location = new System.Drawing.Point(99, 113);
+            this.Btn107.Location = new System.Drawing.Point(158, 115);
             this.Btn107.Name = "Btn107";
-            this.Btn107.Size = new System.Drawing.Size(57, 38);
+            this.Btn107.Size = new System.Drawing.Size(125, 76);
             this.Btn107.TabIndex = 21;
             this.Btn107.Text = "107";
             this.Btn107.UseVisualStyleBackColor = false;
@@ -148,9 +148,9 @@
             // 
             this.Btn106.BackColor = System.Drawing.Color.GreenYellow;
             this.Btn106.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btn106.Location = new System.Drawing.Point(36, 114);
+            this.Btn106.Location = new System.Drawing.Point(12, 115);
             this.Btn106.Name = "Btn106";
-            this.Btn106.Size = new System.Drawing.Size(57, 38);
+            this.Btn106.Size = new System.Drawing.Size(125, 76);
             this.Btn106.TabIndex = 20;
             this.Btn106.Text = "106";
             this.Btn106.UseVisualStyleBackColor = false;
@@ -159,9 +159,9 @@
             // 
             this.Btn105.BackColor = System.Drawing.Color.GreenYellow;
             this.Btn105.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btn105.Location = new System.Drawing.Point(288, 36);
+            this.Btn105.Location = new System.Drawing.Point(578, 38);
             this.Btn105.Name = "Btn105";
-            this.Btn105.Size = new System.Drawing.Size(57, 38);
+            this.Btn105.Size = new System.Drawing.Size(125, 76);
             this.Btn105.TabIndex = 19;
             this.Btn105.Text = "105";
             this.Btn105.UseVisualStyleBackColor = false;
@@ -170,9 +170,9 @@
             // 
             this.Btn104.BackColor = System.Drawing.Color.GreenYellow;
             this.Btn104.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btn104.Location = new System.Drawing.Point(225, 36);
+            this.Btn104.Location = new System.Drawing.Point(441, 38);
             this.Btn104.Name = "Btn104";
-            this.Btn104.Size = new System.Drawing.Size(57, 38);
+            this.Btn104.Size = new System.Drawing.Size(125, 76);
             this.Btn104.TabIndex = 18;
             this.Btn104.Text = "104";
             this.Btn104.UseVisualStyleBackColor = false;
@@ -181,9 +181,9 @@
             // 
             this.Btn103.BackColor = System.Drawing.Color.GreenYellow;
             this.Btn103.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btn103.Location = new System.Drawing.Point(162, 36);
+            this.Btn103.Location = new System.Drawing.Point(299, 38);
             this.Btn103.Name = "Btn103";
-            this.Btn103.Size = new System.Drawing.Size(57, 38);
+            this.Btn103.Size = new System.Drawing.Size(125, 76);
             this.Btn103.TabIndex = 17;
             this.Btn103.Text = "103";
             this.Btn103.UseVisualStyleBackColor = false;
@@ -192,9 +192,9 @@
             // 
             this.Btn102.BackColor = System.Drawing.Color.GreenYellow;
             this.Btn102.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btn102.Location = new System.Drawing.Point(99, 36);
+            this.Btn102.Location = new System.Drawing.Point(158, 38);
             this.Btn102.Name = "Btn102";
-            this.Btn102.Size = new System.Drawing.Size(57, 38);
+            this.Btn102.Size = new System.Drawing.Size(125, 76);
             this.Btn102.TabIndex = 16;
             this.Btn102.Text = "102";
             this.Btn102.UseVisualStyleBackColor = false;
@@ -203,9 +203,9 @@
             // 
             this.Btn101.BackColor = System.Drawing.Color.GreenYellow;
             this.Btn101.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btn101.Location = new System.Drawing.Point(36, 37);
+            this.Btn101.Location = new System.Drawing.Point(12, 38);
             this.Btn101.Name = "Btn101";
-            this.Btn101.Size = new System.Drawing.Size(57, 38);
+            this.Btn101.Size = new System.Drawing.Size(125, 76);
             this.Btn101.TabIndex = 15;
             this.Btn101.Text = "101";
             this.Btn101.UseVisualStyleBackColor = false;
@@ -216,7 +216,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(401, 274);
+            this.ClientSize = new System.Drawing.Size(715, 288);
             this.Controls.Add(this.Btn115);
             this.Controls.Add(this.Btn114);
             this.Controls.Add(this.Btn113);
@@ -240,6 +240,7 @@
             this.Name = "FrmOdalar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Odalar";
+            this.Load += new System.EventHandler(this.FrmOdalar_Load);
             this.ResumeLayout(false);
 
         }

@@ -69,12 +69,16 @@
             this.Btn103 = new System.Windows.Forms.Button();
             this.Btn102 = new System.Windows.Forms.Button();
             this.Btn101 = new System.Windows.Forms.Button();
+            this.TxtKişi = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.TxtKişi);
+            this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.label10);
@@ -100,7 +104,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.Location = new System.Drawing.Point(13, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(412, 545);
+            this.groupBox1.Size = new System.Drawing.Size(412, 581);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Müşteri Kayıt";
@@ -109,7 +113,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(339, 467);
+            this.label11.Location = new System.Drawing.Point(339, 496);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(19, 21);
             this.label11.TabIndex = 2;
@@ -142,7 +146,7 @@
             // TxtPrice
             // 
             this.TxtPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtPrice.Location = new System.Drawing.Point(139, 318);
+            this.TxtPrice.Location = new System.Drawing.Point(139, 366);
             this.TxtPrice.MaxLength = 10;
             this.TxtPrice.Name = "TxtPrice";
             this.TxtPrice.Size = new System.Drawing.Size(236, 29);
@@ -152,7 +156,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(82, 322);
+            this.label9.Location = new System.Drawing.Point(82, 370);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(50, 20);
             this.label9.TabIndex = 35;
@@ -165,7 +169,7 @@
             this.BtnSave.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.BtnSave.FlatAppearance.BorderSize = 0;
             this.BtnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BtnSave.Location = new System.Drawing.Point(3, 504);
+            this.BtnSave.Location = new System.Drawing.Point(3, 540);
             this.BtnSave.Name = "BtnSave";
             this.BtnSave.Size = new System.Drawing.Size(406, 38);
             this.BtnSave.TabIndex = 32;
@@ -176,7 +180,7 @@
             // DateExıt
             // 
             this.DateExıt.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.DateExıt.Location = new System.Drawing.Point(139, 406);
+            this.DateExıt.Location = new System.Drawing.Point(139, 454);
             this.DateExıt.Name = "DateExıt";
             this.DateExıt.Size = new System.Drawing.Size(236, 29);
             this.DateExıt.TabIndex = 31;
@@ -185,7 +189,7 @@
             // DateEntrance
             // 
             this.DateEntrance.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.DateEntrance.Location = new System.Drawing.Point(139, 363);
+            this.DateEntrance.Location = new System.Drawing.Point(139, 411);
             this.DateEntrance.Name = "DateEntrance";
             this.DateEntrance.Size = new System.Drawing.Size(236, 29);
             this.DateEntrance.TabIndex = 30;
@@ -245,7 +249,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(43, 413);
+            this.label8.Location = new System.Drawing.Point(43, 461);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(86, 20);
             this.label8.TabIndex = 23;
@@ -255,7 +259,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(43, 370);
+            this.label7.Location = new System.Drawing.Point(43, 418);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(85, 20);
             this.label7.TabIndex = 22;
@@ -552,13 +556,31 @@
             this.Btn101.UseVisualStyleBackColor = false;
             this.Btn101.Click += new System.EventHandler(this.Btn101_Click);
             // 
+            // TxtKişi
+            // 
+            this.TxtKişi.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtKişi.Location = new System.Drawing.Point(139, 320);
+            this.TxtKişi.Name = "TxtKişi";
+            this.TxtKişi.Size = new System.Drawing.Size(236, 29);
+            this.TxtKişi.TabIndex = 42;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label12.Location = new System.Drawing.Point(92, 324);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(36, 20);
+            this.label12.TabIndex = 41;
+            this.label12.Text = "Kişi:";
+            // 
             // FrmYeniMüşteriEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.ClientSize = new System.Drawing.Size(818, 561);
+            this.ClientSize = new System.Drawing.Size(818, 596);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -617,5 +639,7 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox TxtKişi;
+        private System.Windows.Forms.Label label12;
     }
 }
