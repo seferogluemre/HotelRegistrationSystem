@@ -60,7 +60,11 @@
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+<<<<<<< HEAD
             this.pictureBox1.Location = new System.Drawing.Point(46, 33);
+=======
+            this.pictureBox1.Location = new System.Drawing.Point(36, 33);
+>>>>>>> 89d145663b6742e3d9ce99284f6ec8ff87661b9b
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(127, 107);
