@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.TxtKişi = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -54,23 +56,21 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.BtnDoluOda = new System.Windows.Forms.Button();
             this.BtnBosOda = new System.Windows.Forms.Button();
-            this.Btn115 = new System.Windows.Forms.Button();
-            this.Btn114 = new System.Windows.Forms.Button();
-            this.Btn113 = new System.Windows.Forms.Button();
-            this.Btn112 = new System.Windows.Forms.Button();
-            this.Btn111 = new System.Windows.Forms.Button();
-            this.Btn110 = new System.Windows.Forms.Button();
-            this.Btn109 = new System.Windows.Forms.Button();
-            this.Btn108 = new System.Windows.Forms.Button();
-            this.Btn107 = new System.Windows.Forms.Button();
-            this.Btn106 = new System.Windows.Forms.Button();
-            this.Btn105 = new System.Windows.Forms.Button();
-            this.Btn104 = new System.Windows.Forms.Button();
-            this.Btn103 = new System.Windows.Forms.Button();
-            this.Btn102 = new System.Windows.Forms.Button();
-            this.Btn101 = new System.Windows.Forms.Button();
-            this.TxtKişi = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.btn115 = new System.Windows.Forms.Button();
+            this.btn114 = new System.Windows.Forms.Button();
+            this.btn113 = new System.Windows.Forms.Button();
+            this.btn112 = new System.Windows.Forms.Button();
+            this.btn111 = new System.Windows.Forms.Button();
+            this.btn110 = new System.Windows.Forms.Button();
+            this.btn109 = new System.Windows.Forms.Button();
+            this.btn108 = new System.Windows.Forms.Button();
+            this.btn107 = new System.Windows.Forms.Button();
+            this.btn106 = new System.Windows.Forms.Button();
+            this.btn105 = new System.Windows.Forms.Button();
+            this.btn104 = new System.Windows.Forms.Button();
+            this.btn103 = new System.Windows.Forms.Button();
+            this.btn102 = new System.Windows.Forms.Button();
+            this.btn101 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -104,10 +104,28 @@
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.Location = new System.Drawing.Point(13, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(412, 581);
+            this.groupBox1.Size = new System.Drawing.Size(412, 586);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Müşteri Kayıt";
+            // 
+            // TxtKişi
+            // 
+            this.TxtKişi.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtKişi.Location = new System.Drawing.Point(139, 320);
+            this.TxtKişi.Name = "TxtKişi";
+            this.TxtKişi.Size = new System.Drawing.Size(236, 29);
+            this.TxtKişi.TabIndex = 42;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label12.Location = new System.Drawing.Point(92, 324);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(36, 20);
+            this.label12.TabIndex = 41;
+            this.label12.Text = "Kişi:";
             // 
             // label11
             // 
@@ -169,7 +187,7 @@
             this.BtnSave.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.BtnSave.FlatAppearance.BorderSize = 0;
             this.BtnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BtnSave.Location = new System.Drawing.Point(3, 540);
+            this.BtnSave.Location = new System.Drawing.Point(3, 545);
             this.BtnSave.Name = "BtnSave";
             this.BtnSave.Size = new System.Drawing.Size(406, 38);
             this.BtnSave.TabIndex = 32;
@@ -329,25 +347,25 @@
             // 
             this.groupBox2.Controls.Add(this.BtnDoluOda);
             this.groupBox2.Controls.Add(this.BtnBosOda);
-            this.groupBox2.Controls.Add(this.Btn115);
-            this.groupBox2.Controls.Add(this.Btn114);
-            this.groupBox2.Controls.Add(this.Btn113);
-            this.groupBox2.Controls.Add(this.Btn112);
-            this.groupBox2.Controls.Add(this.Btn111);
-            this.groupBox2.Controls.Add(this.Btn110);
-            this.groupBox2.Controls.Add(this.Btn109);
-            this.groupBox2.Controls.Add(this.Btn108);
-            this.groupBox2.Controls.Add(this.Btn107);
-            this.groupBox2.Controls.Add(this.Btn106);
-            this.groupBox2.Controls.Add(this.Btn105);
-            this.groupBox2.Controls.Add(this.Btn104);
-            this.groupBox2.Controls.Add(this.Btn103);
-            this.groupBox2.Controls.Add(this.Btn102);
-            this.groupBox2.Controls.Add(this.Btn101);
+            this.groupBox2.Controls.Add(this.btn115);
+            this.groupBox2.Controls.Add(this.btn114);
+            this.groupBox2.Controls.Add(this.btn113);
+            this.groupBox2.Controls.Add(this.btn112);
+            this.groupBox2.Controls.Add(this.btn111);
+            this.groupBox2.Controls.Add(this.btn110);
+            this.groupBox2.Controls.Add(this.btn109);
+            this.groupBox2.Controls.Add(this.btn108);
+            this.groupBox2.Controls.Add(this.btn107);
+            this.groupBox2.Controls.Add(this.btn106);
+            this.groupBox2.Controls.Add(this.btn105);
+            this.groupBox2.Controls.Add(this.btn104);
+            this.groupBox2.Controls.Add(this.btn103);
+            this.groupBox2.Controls.Add(this.btn102);
+            this.groupBox2.Controls.Add(this.btn101);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox2.Location = new System.Drawing.Point(449, 13);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(343, 470);
+            this.groupBox2.Size = new System.Drawing.Size(496, 583);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Odalar";
@@ -356,7 +374,7 @@
             // 
             this.BtnDoluOda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.BtnDoluOda.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnDoluOda.Location = new System.Drawing.Point(265, 423);
+            this.BtnDoluOda.Location = new System.Drawing.Point(418, 536);
             this.BtnDoluOda.Name = "BtnDoluOda";
             this.BtnDoluOda.Size = new System.Drawing.Size(72, 38);
             this.BtnDoluOda.TabIndex = 16;
@@ -368,7 +386,7 @@
             // 
             this.BtnBosOda.BackColor = System.Drawing.Color.GreenYellow;
             this.BtnBosOda.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnBosOda.Location = new System.Drawing.Point(265, 375);
+            this.BtnBosOda.Location = new System.Drawing.Point(340, 536);
             this.BtnBosOda.Name = "BtnBosOda";
             this.BtnBosOda.Size = new System.Drawing.Size(72, 38);
             this.BtnBosOda.TabIndex = 15;
@@ -376,203 +394,185 @@
             this.BtnBosOda.UseVisualStyleBackColor = false;
             this.BtnBosOda.Click += new System.EventHandler(this.BtnBosOda_Click);
             // 
-            // Btn115
+            // btn115
             // 
-            this.Btn115.BackColor = System.Drawing.Color.GreenYellow;
-            this.Btn115.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btn115.Location = new System.Drawing.Point(269, 257);
-            this.Btn115.Name = "Btn115";
-            this.Btn115.Size = new System.Drawing.Size(57, 38);
-            this.Btn115.TabIndex = 14;
-            this.Btn115.Text = "115";
-            this.Btn115.UseVisualStyleBackColor = false;
-            this.Btn115.Click += new System.EventHandler(this.Btn115_Click);
+            this.btn115.BackColor = System.Drawing.Color.GreenYellow;
+            this.btn115.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn115.Location = new System.Drawing.Point(368, 210);
+            this.btn115.Name = "btn115";
+            this.btn115.Size = new System.Drawing.Size(122, 88);
+            this.btn115.TabIndex = 14;
+            this.btn115.Text = "115";
+            this.btn115.UseVisualStyleBackColor = false;
+            this.btn115.Click += new System.EventHandler(this.Btn115_Click);
             // 
-            // Btn114
+            // btn114
             // 
-            this.Btn114.BackColor = System.Drawing.Color.GreenYellow;
-            this.Btn114.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btn114.Location = new System.Drawing.Point(206, 257);
-            this.Btn114.Name = "Btn114";
-            this.Btn114.Size = new System.Drawing.Size(57, 38);
-            this.Btn114.TabIndex = 13;
-            this.Btn114.Text = "114";
-            this.Btn114.UseVisualStyleBackColor = false;
-            this.Btn114.Click += new System.EventHandler(this.Btn114_Click);
+            this.btn114.BackColor = System.Drawing.Color.GreenYellow;
+            this.btn114.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn114.Location = new System.Drawing.Point(206, 210);
+            this.btn114.Name = "btn114";
+            this.btn114.Size = new System.Drawing.Size(122, 88);
+            this.btn114.TabIndex = 13;
+            this.btn114.Text = "114";
+            this.btn114.UseVisualStyleBackColor = false;
+            this.btn114.Click += new System.EventHandler(this.Btn114_Click);
             // 
-            // Btn113
+            // btn113
             // 
-            this.Btn113.BackColor = System.Drawing.Color.GreenYellow;
-            this.Btn113.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btn113.Location = new System.Drawing.Point(143, 257);
-            this.Btn113.Name = "Btn113";
-            this.Btn113.Size = new System.Drawing.Size(57, 38);
-            this.Btn113.TabIndex = 12;
-            this.Btn113.Text = "113";
-            this.Btn113.UseVisualStyleBackColor = false;
-            this.Btn113.Click += new System.EventHandler(this.Btn113_Click);
+            this.btn113.BackColor = System.Drawing.Color.GreenYellow;
+            this.btn113.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn113.Location = new System.Drawing.Point(206, 411);
+            this.btn113.Name = "btn113";
+            this.btn113.Size = new System.Drawing.Size(122, 88);
+            this.btn113.TabIndex = 12;
+            this.btn113.Text = "113";
+            this.btn113.UseVisualStyleBackColor = false;
+            this.btn113.Click += new System.EventHandler(this.Btn113_Click);
             // 
-            // Btn112
+            // btn112
             // 
-            this.Btn112.BackColor = System.Drawing.Color.GreenYellow;
-            this.Btn112.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btn112.Location = new System.Drawing.Point(80, 257);
-            this.Btn112.Name = "Btn112";
-            this.Btn112.Size = new System.Drawing.Size(57, 38);
-            this.Btn112.TabIndex = 11;
-            this.Btn112.Text = "112";
-            this.Btn112.UseVisualStyleBackColor = false;
-            this.Btn112.Click += new System.EventHandler(this.Btn112_Click);
+            this.btn112.BackColor = System.Drawing.Color.GreenYellow;
+            this.btn112.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn112.Location = new System.Drawing.Point(368, 415);
+            this.btn112.Name = "btn112";
+            this.btn112.Size = new System.Drawing.Size(122, 88);
+            this.btn112.TabIndex = 11;
+            this.btn112.Text = "112";
+            this.btn112.UseVisualStyleBackColor = false;
+            this.btn112.Click += new System.EventHandler(this.Btn112_Click);
             // 
-            // Btn111
+            // btn111
             // 
-            this.Btn111.BackColor = System.Drawing.Color.GreenYellow;
-            this.Btn111.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btn111.Location = new System.Drawing.Point(17, 258);
-            this.Btn111.Name = "Btn111";
-            this.Btn111.Size = new System.Drawing.Size(57, 38);
-            this.Btn111.TabIndex = 10;
-            this.Btn111.Text = "111";
-            this.Btn111.UseVisualStyleBackColor = false;
-            this.Btn111.Click += new System.EventHandler(this.Btn111_Click);
+            this.btn111.BackColor = System.Drawing.Color.GreenYellow;
+            this.btn111.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn111.Location = new System.Drawing.Point(20, 210);
+            this.btn111.Name = "btn111";
+            this.btn111.Size = new System.Drawing.Size(122, 88);
+            this.btn111.TabIndex = 10;
+            this.btn111.Text = "111";
+            this.btn111.UseVisualStyleBackColor = false;
+            this.btn111.Click += new System.EventHandler(this.Btn111_Click);
             // 
-            // Btn110
+            // btn110
             // 
-            this.Btn110.BackColor = System.Drawing.Color.GreenYellow;
-            this.Btn110.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btn110.Location = new System.Drawing.Point(269, 178);
-            this.Btn110.Name = "Btn110";
-            this.Btn110.Size = new System.Drawing.Size(57, 38);
-            this.Btn110.TabIndex = 9;
-            this.Btn110.Text = "110";
-            this.Btn110.UseVisualStyleBackColor = false;
-            this.Btn110.Click += new System.EventHandler(this.Btn110_Click);
+            this.btn110.BackColor = System.Drawing.Color.GreenYellow;
+            this.btn110.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn110.Location = new System.Drawing.Point(368, 116);
+            this.btn110.Name = "btn110";
+            this.btn110.Size = new System.Drawing.Size(122, 88);
+            this.btn110.TabIndex = 9;
+            this.btn110.Text = "110";
+            this.btn110.UseVisualStyleBackColor = false;
+            this.btn110.Click += new System.EventHandler(this.Btn110_Click);
             // 
-            // Btn109
+            // btn109
             // 
-            this.Btn109.BackColor = System.Drawing.Color.GreenYellow;
-            this.Btn109.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btn109.Location = new System.Drawing.Point(206, 178);
-            this.Btn109.Name = "Btn109";
-            this.Btn109.Size = new System.Drawing.Size(57, 38);
-            this.Btn109.TabIndex = 8;
-            this.Btn109.Text = "109";
-            this.Btn109.UseVisualStyleBackColor = false;
-            this.Btn109.Click += new System.EventHandler(this.Btn109_Click);
+            this.btn109.BackColor = System.Drawing.Color.GreenYellow;
+            this.btn109.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn109.Location = new System.Drawing.Point(206, 116);
+            this.btn109.Name = "btn109";
+            this.btn109.Size = new System.Drawing.Size(122, 88);
+            this.btn109.TabIndex = 8;
+            this.btn109.Text = "109";
+            this.btn109.UseVisualStyleBackColor = false;
+            this.btn109.Click += new System.EventHandler(this.Btn109_Click);
             // 
-            // Btn108
+            // btn108
             // 
-            this.Btn108.BackColor = System.Drawing.Color.GreenYellow;
-            this.Btn108.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btn108.Location = new System.Drawing.Point(143, 178);
-            this.Btn108.Name = "Btn108";
-            this.Btn108.Size = new System.Drawing.Size(57, 38);
-            this.Btn108.TabIndex = 7;
-            this.Btn108.Text = "108";
-            this.Btn108.UseVisualStyleBackColor = false;
-            this.Btn108.Click += new System.EventHandler(this.Btn108_Click);
+            this.btn108.BackColor = System.Drawing.Color.GreenYellow;
+            this.btn108.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn108.Location = new System.Drawing.Point(368, 307);
+            this.btn108.Name = "btn108";
+            this.btn108.Size = new System.Drawing.Size(122, 88);
+            this.btn108.TabIndex = 7;
+            this.btn108.Text = "108";
+            this.btn108.UseVisualStyleBackColor = false;
+            this.btn108.Click += new System.EventHandler(this.Btn108_Click);
             // 
-            // Btn107
+            // btn107
             // 
-            this.Btn107.BackColor = System.Drawing.Color.GreenYellow;
-            this.Btn107.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btn107.Location = new System.Drawing.Point(80, 178);
-            this.Btn107.Name = "Btn107";
-            this.Btn107.Size = new System.Drawing.Size(57, 38);
-            this.Btn107.TabIndex = 6;
-            this.Btn107.Text = "107";
-            this.Btn107.UseVisualStyleBackColor = false;
-            this.Btn107.Click += new System.EventHandler(this.Btn107_Click);
+            this.btn107.BackColor = System.Drawing.Color.GreenYellow;
+            this.btn107.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn107.Location = new System.Drawing.Point(20, 411);
+            this.btn107.Name = "btn107";
+            this.btn107.Size = new System.Drawing.Size(122, 88);
+            this.btn107.TabIndex = 6;
+            this.btn107.Text = "107";
+            this.btn107.UseVisualStyleBackColor = false;
+            this.btn107.Click += new System.EventHandler(this.Btn107_Click);
             // 
-            // Btn106
+            // btn106
             // 
-            this.Btn106.BackColor = System.Drawing.Color.GreenYellow;
-            this.Btn106.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btn106.Location = new System.Drawing.Point(17, 179);
-            this.Btn106.Name = "Btn106";
-            this.Btn106.Size = new System.Drawing.Size(57, 38);
-            this.Btn106.TabIndex = 5;
-            this.Btn106.Text = "106";
-            this.Btn106.UseVisualStyleBackColor = false;
-            this.Btn106.Click += new System.EventHandler(this.Btn106_Click);
+            this.btn106.BackColor = System.Drawing.Color.GreenYellow;
+            this.btn106.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn106.Location = new System.Drawing.Point(20, 116);
+            this.btn106.Name = "btn106";
+            this.btn106.Size = new System.Drawing.Size(122, 88);
+            this.btn106.TabIndex = 5;
+            this.btn106.Text = "106";
+            this.btn106.UseVisualStyleBackColor = false;
+            this.btn106.Click += new System.EventHandler(this.Btn106_Click);
             // 
-            // Btn105
+            // btn105
             // 
-            this.Btn105.BackColor = System.Drawing.Color.GreenYellow;
-            this.Btn105.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btn105.Location = new System.Drawing.Point(269, 101);
-            this.Btn105.Name = "Btn105";
-            this.Btn105.Size = new System.Drawing.Size(57, 38);
-            this.Btn105.TabIndex = 4;
-            this.Btn105.Text = "105";
-            this.Btn105.UseVisualStyleBackColor = false;
-            this.Btn105.Click += new System.EventHandler(this.Btn105_Click);
+            this.btn105.BackColor = System.Drawing.Color.GreenYellow;
+            this.btn105.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn105.Location = new System.Drawing.Point(368, 22);
+            this.btn105.Name = "btn105";
+            this.btn105.Size = new System.Drawing.Size(122, 88);
+            this.btn105.TabIndex = 4;
+            this.btn105.Text = "105";
+            this.btn105.UseVisualStyleBackColor = false;
+            this.btn105.Click += new System.EventHandler(this.Btn105_Click);
             // 
-            // Btn104
+            // btn104
             // 
-            this.Btn104.BackColor = System.Drawing.Color.GreenYellow;
-            this.Btn104.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btn104.Location = new System.Drawing.Point(206, 101);
-            this.Btn104.Name = "Btn104";
-            this.Btn104.Size = new System.Drawing.Size(57, 38);
-            this.Btn104.TabIndex = 3;
-            this.Btn104.Text = "104";
-            this.Btn104.UseVisualStyleBackColor = false;
-            this.Btn104.Click += new System.EventHandler(this.Btn104_Click);
+            this.btn104.BackColor = System.Drawing.Color.GreenYellow;
+            this.btn104.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn104.Location = new System.Drawing.Point(206, 22);
+            this.btn104.Name = "btn104";
+            this.btn104.Size = new System.Drawing.Size(122, 88);
+            this.btn104.TabIndex = 3;
+            this.btn104.Text = "104";
+            this.btn104.UseVisualStyleBackColor = false;
+            this.btn104.Click += new System.EventHandler(this.Btn104_Click);
             // 
-            // Btn103
+            // btn103
             // 
-            this.Btn103.BackColor = System.Drawing.Color.GreenYellow;
-            this.Btn103.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btn103.Location = new System.Drawing.Point(143, 101);
-            this.Btn103.Name = "Btn103";
-            this.Btn103.Size = new System.Drawing.Size(57, 38);
-            this.Btn103.TabIndex = 2;
-            this.Btn103.Text = "103";
-            this.Btn103.UseVisualStyleBackColor = false;
-            this.Btn103.Click += new System.EventHandler(this.Btn103_Click);
+            this.btn103.BackColor = System.Drawing.Color.GreenYellow;
+            this.btn103.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn103.Location = new System.Drawing.Point(206, 307);
+            this.btn103.Name = "btn103";
+            this.btn103.Size = new System.Drawing.Size(122, 88);
+            this.btn103.TabIndex = 2;
+            this.btn103.Text = "103";
+            this.btn103.UseVisualStyleBackColor = false;
+            this.btn103.Click += new System.EventHandler(this.Btn103_Click);
             // 
-            // Btn102
+            // btn102
             // 
-            this.Btn102.BackColor = System.Drawing.Color.GreenYellow;
-            this.Btn102.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btn102.Location = new System.Drawing.Point(80, 101);
-            this.Btn102.Name = "Btn102";
-            this.Btn102.Size = new System.Drawing.Size(57, 38);
-            this.Btn102.TabIndex = 1;
-            this.Btn102.Text = "102";
-            this.Btn102.UseVisualStyleBackColor = false;
-            this.Btn102.Click += new System.EventHandler(this.Btn102_Click);
+            this.btn102.BackColor = System.Drawing.Color.GreenYellow;
+            this.btn102.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn102.Location = new System.Drawing.Point(20, 307);
+            this.btn102.Name = "btn102";
+            this.btn102.Size = new System.Drawing.Size(122, 88);
+            this.btn102.TabIndex = 1;
+            this.btn102.Text = "102";
+            this.btn102.UseVisualStyleBackColor = false;
+            this.btn102.Click += new System.EventHandler(this.Btn102_Click);
             // 
-            // Btn101
+            // btn101
             // 
-            this.Btn101.BackColor = System.Drawing.Color.GreenYellow;
-            this.Btn101.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btn101.Location = new System.Drawing.Point(17, 102);
-            this.Btn101.Name = "Btn101";
-            this.Btn101.Size = new System.Drawing.Size(57, 38);
-            this.Btn101.TabIndex = 0;
-            this.Btn101.Text = "101";
-            this.Btn101.UseVisualStyleBackColor = false;
-            this.Btn101.Click += new System.EventHandler(this.Btn101_Click);
-            // 
-            // TxtKişi
-            // 
-            this.TxtKişi.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtKişi.Location = new System.Drawing.Point(139, 320);
-            this.TxtKişi.Name = "TxtKişi";
-            this.TxtKişi.Size = new System.Drawing.Size(236, 29);
-            this.TxtKişi.TabIndex = 42;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label12.Location = new System.Drawing.Point(92, 324);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(36, 20);
-            this.label12.TabIndex = 41;
-            this.label12.Text = "Kişi:";
+            this.btn101.BackColor = System.Drawing.Color.GreenYellow;
+            this.btn101.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn101.Location = new System.Drawing.Point(20, 22);
+            this.btn101.Name = "btn101";
+            this.btn101.Size = new System.Drawing.Size(122, 88);
+            this.btn101.TabIndex = 0;
+            this.btn101.Text = "101";
+            this.btn101.UseVisualStyleBackColor = false;
+            this.btn101.Click += new System.EventHandler(this.Btn101_Click);
             // 
             // FrmYeniMüşteriEkle
             // 
@@ -580,7 +580,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.ClientSize = new System.Drawing.Size(818, 596);
+            this.ClientSize = new System.Drawing.Size(996, 602);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -589,6 +589,7 @@
             this.Name = "FrmYeniMüşteriEkle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Yeni Müşteri Ekleme";
+            this.Load += new System.EventHandler(this.FrmYeniMüşteriEkle_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -617,23 +618,23 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button Btn110;
-        private System.Windows.Forms.Button Btn109;
-        private System.Windows.Forms.Button Btn108;
-        private System.Windows.Forms.Button Btn107;
-        private System.Windows.Forms.Button Btn106;
-        private System.Windows.Forms.Button Btn105;
-        private System.Windows.Forms.Button Btn104;
-        private System.Windows.Forms.Button Btn103;
-        private System.Windows.Forms.Button Btn102;
-        private System.Windows.Forms.Button Btn101;
+        private System.Windows.Forms.Button btn110;
+        private System.Windows.Forms.Button btn109;
+        private System.Windows.Forms.Button btn108;
+        private System.Windows.Forms.Button btn107;
+        private System.Windows.Forms.Button btn106;
+        private System.Windows.Forms.Button btn105;
+        private System.Windows.Forms.Button btn104;
+        private System.Windows.Forms.Button btn103;
+        private System.Windows.Forms.Button btn102;
+        private System.Windows.Forms.Button btn101;
         private System.Windows.Forms.Button BtnDoluOda;
         private System.Windows.Forms.Button BtnBosOda;
-        private System.Windows.Forms.Button Btn115;
-        private System.Windows.Forms.Button Btn114;
-        private System.Windows.Forms.Button Btn113;
-        private System.Windows.Forms.Button Btn112;
-        private System.Windows.Forms.Button Btn111;
+        private System.Windows.Forms.Button btn115;
+        private System.Windows.Forms.Button btn114;
+        private System.Windows.Forms.Button btn113;
+        private System.Windows.Forms.Button btn112;
+        private System.Windows.Forms.Button btn111;
         private System.Windows.Forms.TextBox TxtPrice;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox comboBox1;

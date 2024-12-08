@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="form\Class\Method.cs" />
     <Compile Include="form\FrmAdminGiris.cs">
       <SubType>Form</SubType>
     </Compile>

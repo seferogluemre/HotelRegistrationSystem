@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HotelRegistrationSystem.form.Class;
+using System;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
@@ -13,13 +14,13 @@ namespace HotelRegistrationSystem.form
             InitializeComponent();
         }
 
-        Sql sql = new Sql();
-
 
         private void FrmOdalar_Load(object sender, EventArgs e)
         {
+            var odaHandler = new Method();
 
-
+            // Kontrolleri metoda gönder
+            odaHandler.GetCustomerAndRoomsData(this.Controls);
         }
     }
 }

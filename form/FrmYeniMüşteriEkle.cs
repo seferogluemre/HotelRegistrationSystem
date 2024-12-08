@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.Sql;
 using System.Data.SqlClient;
 using HotelRegistrationSystem.form;
+using HotelRegistrationSystem.form.Class;
 
 
 namespace HotelRegistrationSystem.icons
@@ -165,6 +166,14 @@ namespace HotelRegistrationSystem.icons
             Komut.ExecuteNonQuery();
             bgl.sqlConnection().Close();
             MessageBox.Show("Müşteri Kaydı Yapıldı");
+        }
+
+        private void FrmYeniMüşteriEkle_Load(object sender, EventArgs e)
+        {
+            var roomData = new Method();
+
+            // Kontrolleri metoda gönder
+            roomData.GetCustomerAndRoomsData(this.Controls);
         }
     }
 }
