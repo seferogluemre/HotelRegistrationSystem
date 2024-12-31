@@ -1,1 +1,1 @@
-Yeni başladıgım Pansiyon Kayıt sistemidir  adım adım geliştirmeler yapılcaktır
+Müşteri kayıt Müşteri görüntüleme ve authentication işlemleri eklenmiştir
