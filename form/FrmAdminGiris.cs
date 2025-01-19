@@ -29,8 +29,8 @@ namespace HotelRegistrationSystem
             if(txtPassword.Text != "" && txtUsername.Text != "")
             {
                 SqlCommand komut = new SqlCommand("select * from UsersTable where Username=@username and Password=@password",baglantı.sqlConnection());
-                komut.Parameters.AddWithValue("username", txtUsername.Text);
-                komut.Parameters.AddWithValue("password", txtPassword.Text);
+                komut.Parameters.AddWithValue("@username", txtUsername.Text);
+                komut.Parameters.AddWithValue("@password", txtPassword.Text);
                 SqlDataReader dr = komut.ExecuteReader();
 
                 if (dr.Read())

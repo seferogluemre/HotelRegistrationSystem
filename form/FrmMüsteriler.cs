@@ -70,11 +70,11 @@ namespace HotelRegistrationSystem.form
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             string selectDataQuery = "select * from MüsteriTable where Customer_Tc like '%" + TxtTcSorgu.Text + "%'";
-
+             
             SqlCommand selectCommand = new SqlCommand(selectDataQuery, bgl.sqlConnection());
             SqlDataReader dataReader = selectCommand.ExecuteReader();
             if (dataReader.Read())
-            {
+             {
                 ListViewItem item = new ListViewItem(dataReader[0].ToString());
                 // Alt öğeleri ekleyin
                 item.SubItems.Add(dataReader[1].ToString());
