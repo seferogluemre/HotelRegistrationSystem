@@ -35,6 +35,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.LblPersonelMaaş = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.LblGıda = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.LblIçecek = new System.Windows.Forms.Label();
+            this.LblAtistirmalık = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -101,12 +105,52 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Personel Maaşları";
             // 
+            // LblGıda
+            // 
+            this.LblGıda.AutoSize = true;
+            this.LblGıda.Location = new System.Drawing.Point(244, 161);
+            this.LblGıda.Name = "LblGıda";
+            this.LblGıda.Size = new System.Drawing.Size(27, 21);
+            this.LblGıda.TabIndex = 8;
+            this.LblGıda.Text = "TL";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(12, 161);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(199, 21);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Alınan ürünlerin toplamı:";
+            // 
+            // LblIçecek
+            // 
+            this.LblIçecek.AutoSize = true;
+            this.LblIçecek.Location = new System.Drawing.Point(325, 161);
+            this.LblIçecek.Name = "LblIçecek";
+            this.LblIçecek.Size = new System.Drawing.Size(27, 21);
+            this.LblIçecek.TabIndex = 9;
+            this.LblIçecek.Text = "TL";
+            // 
+            // LblAtistirmalık
+            // 
+            this.LblAtistirmalık.AutoSize = true;
+            this.LblAtistirmalık.Location = new System.Drawing.Point(406, 161);
+            this.LblAtistirmalık.Name = "LblAtistirmalık";
+            this.LblAtistirmalık.Size = new System.Drawing.Size(27, 21);
+            this.LblAtistirmalık.TabIndex = 10;
+            this.LblAtistirmalık.Text = "TL";
+            // 
             // FrmGelirGide
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(679, 512);
+            this.Controls.Add(this.LblAtistirmalık);
+            this.Controls.Add(this.LblIçecek);
+            this.Controls.Add(this.LblGıda);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.LblPersonelMaaş);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
@@ -135,5 +179,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label LblPersonelMaaş;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label LblGıda;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label LblIçecek;
+        private System.Windows.Forms.Label LblAtistirmalık;
     }
 }
