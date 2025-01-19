@@ -14,6 +14,7 @@ namespace HotelRegistrationSystem.form
 
         private void veriler()
         {
+            listView1.Items.Clear();
             SqlCommand sqlCommand = new SqlCommand("Select * from TblAlınanÜrünler", connection.sqlConnection());
             SqlDataReader dataReader = sqlCommand.ExecuteReader();
             while (dataReader.Read())
@@ -28,7 +29,13 @@ namespace HotelRegistrationSystem.form
         }
         private void button1_Click(object sender, EventArgs e)
         {
-
+            SqlCommand kommand = new SqlCommand("insert into TblAlınanÜrünler(Gıda,Icecek,Cerezler) values(@p1,@p2,@p3)", connection.sqlConnection());
+            kommand.Parameters.AddWithValue("@p1", txtGidalar.Text.Trim());
+            kommand.Parameters.AddWithValue("@p2", txtIcecekler.Text.Trim());
+            kommand.Parameters.AddWithValue("@p3", txtAtistirmaliklar.Text.Trim());
+            kommand.ExecuteNonQuery();
+            connection.sqlConnection().Close();
+            MessageBox.Show("Ürün raporu eklendi", "Başarılı kayıt", MessageBoxButtons.OK);
         }
     }
 }
