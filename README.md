@@ -1,1 +1,1 @@
-Müşteri kayıt Müşteri görüntüleme ve authentication işlemleri eklendi
+Müşteri kayıt  görüntüleme ve authentication işlemleri eklendi raporlama formu eklendi
